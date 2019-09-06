@@ -1,3 +1,5 @@
+# EM DESENVOLVIMENTO
+
 # reactjs-carousel-library
 
 > Componente de carousel para reactjs
@@ -13,15 +15,13 @@ npm install --save reactjs-carousel-library
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import MyComponent from 'reactjs-carousel-library'
+import MyComponent from "reactjs-carousel-library";
 
 class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
+  render() {
+    return <MyComponent />;
   }
 }
 ```
