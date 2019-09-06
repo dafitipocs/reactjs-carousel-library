@@ -1,25 +1,18 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import CarouselWrapper from '../components/container'
+import CarouselImages from '../components/images'
 
-import styles from '../assets/styles.css'
-
-import Wrapper from '../components/wrapper'
-
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
+export default class Carousel extends Component {
   render() {
-    const { text } = this.props
-
     return (
       <React.Fragment>
-        <Wrapper />
-        <div className={styles.test}>
-          {' '}
-          essa com css Example Component: {text}
-        </div>
+        <CarouselWrapper>
+          <CarouselImages initialHeight={400} initialWidth={600}>
+            <img src='https://www.w3schools.com/howto/img_lights_wide.jpg' />
+            <img src='http://wowslider.com/sliders/demo-42/data1/images/lighthouse.jpg' />
+            <img src='http://wowslider.com/sliders/demo-54/data1/images/dhowboat.jpg' />
+          </CarouselImages>
+        </CarouselWrapper>
       </React.Fragment>
     )
   }
