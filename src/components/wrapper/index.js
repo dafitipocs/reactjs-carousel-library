@@ -10,9 +10,10 @@ class Wrapper extends React.Component {
 
   render() {
     return (
-      <ContainerComponent>
-        essa div Container esta com style component
-      </ContainerComponent>
+      <React.Fragment>
+        <h1>essa div abaixo esta com style component</h1>
+        <ContainerComponent />
+      </React.Fragment>
     )
   }
 }

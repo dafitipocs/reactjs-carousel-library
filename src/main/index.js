@@ -16,7 +16,10 @@ export default class ExampleComponent extends Component {
     return (
       <React.Fragment>
         <Wrapper />
-        <div className={styles.test}>Example Component: {text}</div>
+        <div className={styles.test}>
+          {' '}
+          essa com css Example Component: {text}
+        </div>
       </React.Fragment>
     )
   }
