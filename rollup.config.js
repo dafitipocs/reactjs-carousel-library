@@ -9,7 +9,7 @@ import svgr from '@svgr/rollup'
 import pkg from './package.json'
 
 export default {
-  input: 'src/index.js',
+  input: 'src/main/index.js',
   output: [
     {
       file: pkg.main,
@@ -31,9 +31,11 @@ export default {
     svgr(),
     babel({
       exclude: 'node_modules/**',
-      plugins: [ 'external-helpers' ]
+      plugins: ['external-helpers']
     }),
     resolve(),
     commonjs()
-  ]
+  ],
+  external: ['styled-components'],
+  globals: { 'styled-components': 'styled' }
 }
