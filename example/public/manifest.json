@@ -1,0 +1,8 @@
+{
+  "short_name": "reactjs-carousel-library",
+  "name": "reactjs-carousel-library",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
